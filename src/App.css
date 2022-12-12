@@ -39,6 +39,16 @@ body {
   transform: scale(1.05, 1.05);
 }
 
+.patientlog-btn-container {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.patientlog-btn {
+  background-color: slategrey;
+  color: white;
+}
+
 /* .login-form {
   text-align: center;
   font-size: 24px;

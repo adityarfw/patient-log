@@ -10,6 +10,16 @@ const Login = () => {
     const data = { email: email, password: password };
     setFormData([data]);
     console.log(formData);
+
+    const url = 'https://jsonplaceholder.typicode.com/posts';
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ formData }),
+    };
+    fetch(url, requestOptions)
+      .then((response) => console.log('Submitted successfully'))
+      .catch((error) => console.log('Form submit error', error));
   };
 
   return (
