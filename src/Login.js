@@ -12,25 +12,29 @@ const Login = () => {
   };
 
   return (
-    <div className='login-form'>
-      <h1>Sign In</h1>
+    <div className='container mt-3'>
+      <h1 className='form-name'>Sign In</h1>
       <form action='' onSubmit={submitForm} className='form-container'>
-        <div className='form-content'>
-          <div>
+        <div>
+          <div className='mb-3 mt-3'>
+            <label htmlFor='email'>Email:</label>
             <input
-              type='text'
+              type='email'
+              className='form-control'
               name='email'
               id='email'
-              placeholder='Email'
+              placeholder='Enter Email'
               value={email}
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
             />
           </div>
-          <div>
+          <div className='mb-3'>
+            <label htmlFor='password'>Password:</label>
             <input
               type='password'
+              className='form-control'
               name='password'
               id='password'
               placeholder='Password'
@@ -40,9 +44,11 @@ const Login = () => {
               }}
             />
           </div>
-          <button type='submit' className='submitButton'>
-            Sign In
-          </button>
+          <div className='submit-btn'>
+            <button type='submit' className='btn btn-primary'>
+              Sign In
+            </button>
+          </div>
         </div>
       </form>
     </div>

@@ -1,4 +1,45 @@
-.login-form {
+/* Using bootstrap for the form */
+/* Using Google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+
+body {
+  background-color: snow;
+  margin: 0 auto;
+  margin-top: 200px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.form-name {
+  font-weight: 700;
+  text-align: center;
+}
+
+.container {
+  max-width: 500px;
+  background-color: gainsboro;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 400;
+}
+
+.submit-btn {
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: salmon;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: yellowgreen;
+  color: white;
+  transform: scale(1.05, 1.05);
+}
+
+/* .login-form {
   text-align: center;
   font-size: 24px;
 }
@@ -22,4 +63,4 @@
   margin: 20px;
   height: 40px;
   cursor: pointer;
-}
+} */
