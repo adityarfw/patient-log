@@ -5,7 +5,8 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [formData, setFormData] = useState('');
 
-  const submitForm = () => {
+  const submitForm = (event) => {
+    event.preventDefault();
     const data = { email: email, password: password };
     setFormData([data]);
     console.log(formData);
